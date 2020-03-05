@@ -12,11 +12,10 @@
 
 
 /* [9] 「clearfix」クラスに対してスタイルの指定をしている直下の5行のコメントアウトを外す => これで、「clearfix」というクラスに対して下記のスタイルが指定されます。つまり、「clearfix」が使えるようになりました。これをしてあげると、うまく表示されなかった「.q1__content」が、3つの濃い青いボックスを囲うようにちゃんと表示されたと思います。 [10]は58行目。 */
-/* .clearfix:after {
-  display: block;
-  content: "";
-  clear: both;
-} */
+/* <div class="q1 q1__content clearfix">
+          <!-- q1__content__boxというクラスは、背景が濃い青のボックスになります。このボックスが3つ横並びなので同じ階層に<div class="q1__content__box"></div>を3つ書きます。 -->
+          <div class="q1__content__box">
+            <!-- q1__content__textというクラスは、背景が濃い青のボックスの中にあるボックスですので、3つある<div class="q1__content__box"></div>の中に<p class="q1__content__text"></p>をそれぞれに入れてあげましょう。テキストが入る部分なのでpタグを使用します。 -->
 
 /* q1__contentというクラスに対してのスタイルの指定 */
 .q1__content {
@@ -86,17 +85,38 @@ margin: 10px 0 5px 10px; => 上 右 下 左
 margin: 10px 0 5px; => 上 左右 下
 margin: 10px 5px; => 上下 左右
 margin: 10px; => 上下左右
-margin-top, margin-bottom, margin-left, margin-rightでそれぞれの指定も可能です。
-これはpaddingも同様です。
+margin-top, margin-bottom, margin-left, margin-rightでそれぞれの指定も可能です。*/
 
+.clearfix:after {
+  display: block;
+  content: "";
+  clear: both;
+}
 
-- 「0px」と書かず、「0」と書く
-0というものは、いくら単位をつけても0なので、「0px」とかは書かずに「0」と書きましょう。
-どんな単位に対しても言えることです。
+.q1_content {
+  background-color: #eff3f4;
+  width: 900px;
+  margin: anto;
+  padding: 20px;
+  box-sizing: border-box;
+}
 
-- 色の指定について
-CSSで色を指定する場合は「white」や「red」と書かずに、「#fff」や「#f00」とカラーコードで書くようにしましょう。基本的には「#ffffff」のように6桁で書くのですが、「#ffffff」の場合には「#fff」、「#ff0000」の場合には「#f00」と省略して書くことが可能です。
+.q1_content_box {
+background-color: #3274ae;
+float: left;
+margin-left: 20px;
+padding: 20px;
+width: 230px;
+}
 
+.q1__content .q1__content__box:first-child {
+  margin-left: 0
+}
 
-*/
-
+.q1_content_text {
+  padding: 20px;
+  font-size: 16px;
+  line-height: 16px;
+  border: 10px solid #022336;
+  background-color: #eaf4ff;
+}

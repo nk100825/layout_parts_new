@@ -1,5 +1,115 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
 
-/* 回答はここに書いてね */
+.wapper {
+  font-size: 16px;
+  background-color: white;
+}
+
+.one {
+  width: 225px;
+  float: left;
+  padding: 10px;
+  margin-right: 50px;
+  box-sizing: border-box;
+}
+/* 回答はここにいてね */
+.two {
+  width: 225px;
+  float: left;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.table-box {
+  display: table;
+  margin: 0 auto;
+}
+
+.cell {
+  display: table-cell;
+  width: 225px;
+  vertical-align: middle;
+  padding-left: 50px; 
+}
+
+.three {
+  padding: 10px;
+}
+
+.four {
+  padding: 10px;
+}
+
+.left:first-child {
+  padding-left: 0; 
+}
+
+.inlineblock-box{
+  font-size: 0;
+}
+
+.six {
+  display: inline-block;
+  width: 225px;
+  vertical-align: middle;
+  box-sizing:  border-box; 
+  font-size: 16px;
+}
+
+.seven {
+  display: inline-block; 
+  width: 225px;
+  vertical-align: middle;
+  box-sizing: border-box; 
+  margin-left: 50px;
+  font-size: 16px;
+}
+
+.flex-box {
+  display: flex;
+  justify-content: space-around;
+  vertical-align: bottom;
+  align-items: flex-end;
+}
+
+.eight {
+  width: 225px;
+  box-sizing: border-box;
+}
+
+.nine {
+  width: 225px;
+  box-sizing: border-box;
+  vertical-align: text-bottom;
+}
+
+.margin-inner {
+  width:100%;
+  box-sizing: border-box;
+  font-size: 0;
+}
+
+.margin-box-left {
+  width: 300px;
+  display: inline-block;
+}
+
+.margin-box-rigth {
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  margin-left: -300px;
+  padding-left: 350px;
+  vertical-align: top;
+}
+
+.margin-text {
+  font-size: 16px;
+}
