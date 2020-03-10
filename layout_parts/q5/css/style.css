@@ -1,139 +1,93 @@
 @charset "UTF-8";
 
-.id {
+.box-number {
   position: relative;
   background-color: #ECF1F2;
-  height: 500px;
+  line-height: 500px;
   width: 500px;
   margin: auto;
+}
 
+.number {
+  position: absolute;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  vertical-align: middle;
+  line-height: 100px;
+  width: 100px;
 }
 
 .one {
-  position: absolute;
   z-index: 1;
   top: 40px;
   left: 200px;
   background-color: #ffefd3;
-  line-height: 100px;
-  width: 100px;
-  text-align: center;
-  font-size: 30px;
-  font-weight: bold;
 }
 
 .two{
-  position: absolute;
   z-index: 2;
-  line-height: 100px;
-  width: 100px;
   background-color:#7084de;
   top: 120px;
   left: 280px;
-  text-align: center;
-  font-size: 30px;
-  font-weight: bold;
 }
 
 .three {
-  position: absolute;
   z-index: 3;
-  line-height: 100px;
-  width: 100px;
   background-color:#d0ecea;
   top: 200px;
   left: 360px;
-  text-align: center;
-  font-size: 30px;
-  font-weight: bold;
 }
 
 .four {
-  position: absolute;
   z-index: 4;
-  line-height: 100px;
-  width: 100px;
   background-color: #8b7a5e;
   top: 280px;
   left: 280px;
-  text-align: center;
-  font-size: 30px;
-  font-weight: bold;
 }
 
 .five {
-  position: absolute;
   z-index: 5;
-  line-height: 100px;
-  width: 100px;
   background-color: #9fd6d2;
   top: 360px;
   left: 200px;
-  text-align: center;
-  font-size: 30px;
-  font-weight: bold;
 }
 
 .six {
-  position: absolute;
   z-index: 6;
-  line-height: 100px;
-  width: 100px;
   background-color: #fffee4;
   top: 280px;
   left: 120px;
-  text-align: center;
-  font-size: 30px;
-  font-weight: bold;
 } 
 
 .seven {
-  position: absolute;
   z-index: 7;
-  line-height: 100px;
-  width: 100px;
   background-color: #deae70;
   top: 200px;
   left: 40px;
-  text-align: center;
-  font-size: 30px;
-  font-weight: bold;
 }
 
 .eight {
-  position: absolute;
   z-index: 8;
-  line-height: 100px;
-  width: 100px;
   background-color: #de70cf;
   top: 120px;
   left: 120px;
-  text-align: center;
-  font-size: 30px;
-  font-weight: bold;
 }
 
 .nine {
   position: fixed;
-  line-height: 100px;
-  width: 100px;
   background-color: #2b69a3;
   top: 10px;
   left: 10px;
-  text-align: center;
-  font-size: 30px;
-  font-weight: bold;
 }
 
 .eight::after {
   content: '';
   position: absolute;
-  height: 20px;
+  line-height: 20px;
   width: 20px;
   background-color: #ffefd3;
   top: 0px;
   left: 80px;
   z-index: 9;
 }
-
-共通CSSをまとめたクラスを作っているか

@@ -7,27 +7,21 @@
   width: 100%;
 }
 
-tr {
-  table-layout: fixed;
-  padding: 10px;
-  text-align: center;
-  font-size: 16px;
-  line-height: 22px;
+.table-text tr {
   border: 1px solid #dedede;
 }
 
-th {
-  table-layout: fixed;
+.table-text th {
   background-color: #2244aa;
   padding: 10px;
   color: white;
   text-align: center;
   font-size: 18px;
   line-height: 26px;
-  border: 1px solid #dedede;
+  border: 1px solid #dedede; 
 }
 
-td {
+.table-text td {
   padding: 10px;
   text-align: center;
   font-size: 16px;
@@ -40,7 +34,7 @@ tfoot {
 }
 
 .table-text tbody tr:nth-child(2n) {
-background-color: #ecf1f2;
+  background-color: #ecf1f2;
 }
 
 /* 回答はここに書いてね */

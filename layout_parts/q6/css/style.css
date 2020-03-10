@@ -1,21 +1,22 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
-.one {
+.align {
   text-align: center;
   font-size: 0;
 }
-.one-text {
+.text-align {
   display: inline-block;
   padding: 10px;
   background-color: #e6f2ff;
   font-size: 16px;
 }
-.two {
+
+.margin {
   font-size: 0;
 }
 
-.two-text {
+.text-margin {
   padding: 10px;
   background-color: #e6f2ff;
   font-size: 16px;
@@ -48,11 +49,11 @@
   align-items: center;
 }
 
-.position-box {
+.position-left {
   position: relative;
 }
 
-.position-text {
+.inner-left {
   position: absolute;
   padding: 10px;
   top: 0;
@@ -62,11 +63,11 @@
   margin: auto;
 }
 
-.position-box-right {
+.position-right {
   position: relative;
 }
 
-.position-text-rigth {
+.inner-rigth {
   position: absolute;
   top: 50%;
   left: 50%;

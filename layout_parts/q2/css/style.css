@@ -1,11 +1,6 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
-.clearfix:after {
-  display: block;
-  content: "";
-  clear: both;
-}
 
 .box-main {
   width: 900px;
@@ -20,7 +15,7 @@
   float: left;
 }
 
-.top-text {
+.text {
   font-size: 18px;
   line-height: 22px;
   word-break : break-all;
@@ -31,8 +26,4 @@
   float: right;
 }
 
-.bottom-text {
-  font-size: 18px;
-  line-height: 22px;
-}
 /* 回答はここに書いてね */
