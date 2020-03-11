@@ -12,21 +12,16 @@
   background-color: white;
 }
 
-.one {
+.float-left, .float-right{
   width: 225px;
   float: left;
   padding: 10px;
-  margin-right: 50px;
   box-sizing: border-box;
+}
+.float-left {
+  margin-right: 50px;
 }
 /* 回答はここにいてね */
-.two {
-  width: 225px;
-  float: left;
-  padding: 10px;
-  box-sizing: border-box;
-}
-
 .table-box {
   display: table;
   margin: 0 auto;
@@ -39,15 +34,11 @@
   padding-left: 50px; 
 }
 
-.three {
+.text-right, .text-left {
   padding: 10px;
 }
 
-.four {
-  padding: 10px;
-}
-
-.left:first-child {
+.cell:first-child {
   padding-left: 0; 
 }
 
@@ -55,21 +46,17 @@
   font-size: 0;
 }
 
-.six {
+.inlineblock-left, .inlineblock-right {
   display: inline-block;
   width: 225px;
   vertical-align: middle;
-  box-sizing:  border-box; 
+  box-sizing: border-box; 
   font-size: 16px;
+
 }
 
-.seven {
-  display: inline-block; 
-  width: 225px;
-  vertical-align: middle;
-  box-sizing: border-box; 
+.inlineblock-right {
   margin-left: 50px;
-  font-size: 16px;
 }
 
 .flex-box {
@@ -79,14 +66,12 @@
   align-items: flex-end;
 }
 
-.eight {
+.flex-left, .text-right{
   width: 225px;
   box-sizing: border-box;
 }
 
-.nine {
-  width: 225px;
-  box-sizing: border-box;
+.flex-right {
   vertical-align: text-bottom;
 }
 
