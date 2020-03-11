@@ -3,22 +3,22 @@
 /* 回答はここに書いてね */
 .table-text {
   table-layout: fixed;
-  border: 1px solid #dedede;
+  /* border: 1px solid #dedede; */
   width: 100%;
 }
 
 .table-text tr {
-  border: 1px solid #dedede;
+  /* border: 1px solid #dedede;  */
 }
 
 .table-text th {
   background-color: #2244aa;
   padding: 10px;
-  color: white;
+  color: #fff;
   text-align: center;
   font-size: 18px;
   line-height: 26px;
-  border: 1px solid #dedede; 
+  border: 1px solid #dedede;
 }
 
 .table-text td {
@@ -29,7 +29,7 @@
   border: 1px solid #dedede;
 }
 
-tfoot {
+.table-text tfoot {
   border-top: 2px dashed #000;
 }
 

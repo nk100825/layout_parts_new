@@ -12,14 +12,14 @@
   background-color: white;
 }
 
-.float-left, .float-right{
+.float-text {
   width: 225px;
   float: left;
-  padding: 10px;
   box-sizing: border-box;
-}
-.float-left {
   margin-right: 50px;
+}
+.float-text:last-child {
+  margin-right: 0;
 }
 /* 回答はここにいてね */
 .table-box {
@@ -34,7 +34,7 @@
   padding-left: 50px; 
 }
 
-.text-right, .text-left {
+.table-text {
   padding: 10px;
 }
 
@@ -46,7 +46,7 @@
   font-size: 0;
 }
 
-.inlineblock-left, .inlineblock-right {
+.inlineblock-text {
   display: inline-block;
   width: 225px;
   vertical-align: middle;
@@ -55,7 +55,7 @@
 
 }
 
-.inlineblock-right {
+.inlineblock-text:last-child {
   margin-left: 50px;
 }
 
@@ -66,12 +66,12 @@
   align-items: flex-end;
 }
 
-.flex-left, .text-right{
+.flex-text{
   width: 225px;
   box-sizing: border-box;
 }
 
-.flex-right {
+.flex-test:last-child {
   vertical-align: text-bottom;
 }
 
