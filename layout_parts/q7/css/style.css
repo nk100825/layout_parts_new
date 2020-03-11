@@ -7,24 +7,19 @@
   clear: both;
 }
 
-.wapper {
-  font-size: 16px;
-  background-color: white;
-}
-
 .float-text {
   width: 225px;
   float: left;
-  box-sizing: border-box;
   margin-right: 50px;
 }
-.float-text:last-child {
+
+.float-text:last-child,
+.inlineblock-text:last-child {
   margin-right: 0;
 }
-/* 回答はここにいてね */
+
 .table-box {
   display: table;
-  margin: 0 auto;
 }
 
 .cell {
@@ -34,15 +29,12 @@
   padding-left: 50px; 
 }
 
-.table-text {
-  padding: 10px;
-}
-
 .cell:first-child {
   padding-left: 0; 
 }
 
-.inlineblock-box{
+.inlineblock-box,
+.margin-inner {
   font-size: 0;
 }
 
@@ -50,35 +42,17 @@
   display: inline-block;
   width: 225px;
   vertical-align: middle;
-  box-sizing: border-box; 
-  font-size: 16px;
-
-}
-
-.inlineblock-text:last-child {
-  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .flex-box {
   display: flex;
   justify-content: space-around;
-  vertical-align: bottom;
   align-items: flex-end;
 }
 
 .flex-text{
-  width: 225px;
-  box-sizing: border-box;
-}
-
-.flex-test:last-child {
-  vertical-align: text-bottom;
-}
-
-.margin-inner {
-  width:100%;
-  box-sizing: border-box;
-  font-size: 0;
+  /* width: 225px; */
 }
 
 .margin-box-left {
@@ -89,12 +63,16 @@
 .margin-box-rigth {
   display: inline-block;
   width: 100%;
-  box-sizing: border-box;
   margin-left: -300px;
   padding-left: 350px;
   vertical-align: top;
 }
 
-.margin-text {
+.margin-text,
+.inlineblock-text {
   font-size: 16px;
+}
+
+.sizing {
+  box-sizing: border-box;
 }
